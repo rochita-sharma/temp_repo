@@ -80,8 +80,8 @@ body{
     text-shadow: 2px 2px 4px gray;
 }
 .info2{
-    background: linear-gradient(to bottom, #be0101, red);
-    color: peachpuff;
+    background: linear-gradient(to bottom, #DE5D83, #e787a4);
+    color: #FFF5EE;
     border-radius: 10px;
     box-shadow: 9px 9px 4px #f1b7b7;
     padding: 10px;
@@ -193,12 +193,12 @@ body {
   line-height: 42px;
   padding: 0;
   border: none;
-background: linear-gradient(0deg, red 0%, #e40202 50%, #f80000 100%);
+background: linear-gradient(0deg, #DE5D83 0%, #f089a8 100%);
 }
 
 
 .custom-btn:hover {
-  color: #f00909;
+  color: #DE5D83;
   background: transparent;
    box-shadow:none;
 }
@@ -210,7 +210,7 @@ background: linear-gradient(0deg, red 0%, #e40202 50%, #f80000 100%);
   right:0;
   height:2px;
   width:0;
-  background: #ff0303;
+  background: #DE5D83;
   box-shadow:
    -1px -1px 5px 0px #fff,
    7px 7px 20px 0px #0003,
