@@ -92,6 +92,11 @@ body{
 
 }
 
+.info2:hover{
+  box-shadow: 9px 9px 4px #aa8282;
+  transition: 1s;
+}
+
 .text-effect {
   overflow: hidden;
   position: relative;
@@ -229,11 +234,14 @@ background: linear-gradient(0deg, #DE5D83 0%, #f089a8 100%);
   transition:800ms ease all;
 }
 
+
+
+
 .text-line {
   stroke-dasharray: 500;
   stroke-dashoffset: 500;
   animation: dash 5s linear forwards, filling 5s ease-in forwards;
-  font-size: 80px;
+  font-size: 2em;
 }
 
 .text-line text {
@@ -258,6 +266,8 @@ background: linear-gradient(0deg, #DE5D83 0%, #f089a8 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -267,10 +277,11 @@ background: linear-gradient(0deg, #DE5D83 0%, #f089a8 100%);
 }
 .glitch {
   color: black;
-  font-size: 150px;
+  font-size: 8rem;
   text-transform: upercase;
   position: relative;
   display: inline-block;
+  margin-right: 30px;
 }
 .glitch::before,
 .glitch::after {
@@ -295,6 +306,24 @@ background: linear-gradient(0deg, #DE5D83 0%, #f089a8 100%);
   -webkit-animation: glitch-anim 2.5s infinite linear alternate-reverse;
           animation: glitch-anim 2.5s infinite linear alternate-reverse;
 }
+
+
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  .glitch {
+    margin-right: 10px;
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 10px) and (max-width: 799px) {
+  .glitch {
+    margin-right: 10px;
+    font-size: 4rem;
+  }
+}
+
+
 @-webkit-keyframes glitch-anim {
   0% {
     clip: rect(110px, 9999999px, 74px, 0);
@@ -959,5 +988,3 @@ background: linear-gradient(0deg, #DE5D83 0%, #f089a8 100%);
     clip: rect(5px, 9999999px, 14px, 0);
   }
 }
-
-
