@@ -23,14 +23,14 @@ body{
   background: #f0e9e9;
   transform-style: preserve-3d;
   transform: perspective(2000px);
-  box-shadow: inset 10px 0 20px #f0ecec80, 0 10px 20px #eeeaea80;
+  box-shadow: inset 10px 0 20px #33333380, 0 10px 20px #58575780;
   transition: 1s;
 }
 .card:hover
 {
   z-index: 10000;
   transform: perspective(2000px) rotate(-10deg);
-  box-shadow: inset 10px 10px 50px #e68b8b80, 0 10px 100px #f1dede80;
+  box-shadow: inset 10px 10px 50px #2e2e2e80, 0 10px 100px #13121280;
 }
 
 .card .Box
@@ -103,23 +103,6 @@ body{
   filter: contrast(110%) brightness(190%);
 }
 
-.neon {
-  /* position: relative; */
-  background: black;
-  color: transparent;
-}
-.neon::before, .neon::after {
-  content: attr(data-text);
-  color: white;
-  filter: blur(0.02em);
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-}
-.neon::after {
-  mix-blend-mode: difference;
-}
 
 .gradient,
 .spotlight {
@@ -312,14 +295,14 @@ background: linear-gradient(0deg, #DE5D83 0%, #f089a8 100%);
 @media (min-width: 800px) and (max-width: 1200px) {
   .glitch {
     margin-right: 10px;
-    font-size: 6rem;
+    font-size: 8em;
   }
 }
 
 @media (min-width: 10px) and (max-width: 799px) {
   .glitch {
     margin-right: 10px;
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 }
 
