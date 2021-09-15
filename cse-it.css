@@ -482,14 +482,14 @@ body{
   background: #f0e9e9;
   transform-style: preserve-3d;
   transform: perspective(2000px);
-  box-shadow: inset 10px 0 20px #33333380, 0 10px 20px #58575780;
+  box-shadow: inset 10px 0 20px #f3aac0, 0 10px 20px #58575780;
   transition: 1s;
 }
 .card:hover
 {
   z-index: 10000;
   transform: perspective(2000px) rotate(-10deg);
-  box-shadow: inset 10px 10px 50px #2e2e2e80, 0 10px 100px #13121280;
+  box-shadow: inset 10px 10px 50px #e787a4, 0 10px 100px #13121280;
 }
 
 .card .Box
@@ -529,7 +529,7 @@ body{
   padding: 15px;
   z-index: -1;
   font-family: 'Roboto', sans-serif;
-  border: 2px solid gray
+  border: 2px solid gray;
 }
 
 .info1{
@@ -702,8 +702,41 @@ background: linear-gradient(0deg, #DE5D83 0%, #f089a8 100%);
   0%, 90% { fill: #bac736; fill-opacity: 0; }
   100% { fill: #bac736; fill-opacity: 1; }
 }
+/* .patterns {
+  height: 100vh;
+  
+} */
+svg{
+  width: 1200px;
+}
+svg text {
+  font-family: Lora;
+  letter-spacing: 10px;
+  stroke: #DE5D83; 
+  font-size: 120px;
+  font-weight: 700;
+  stroke-width: 3;
+  width: 100%;
+  animation: textAnimate 5s infinite alternate;
+  
+}
 
-.glitch-wrapper {
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill:#ffbad0;
+
+  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: #e90080;
+  }
+  
+}
+/* .glitch-wrapper {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1429,19 +1462,19 @@ background: linear-gradient(0deg, #DE5D83 0%, #f089a8 100%);
   100% {
     clip: rect(5px, 9999999px, 14px, 0);
   }
-}
-
+} */
+ */
 
 
 
 /* Footer Css */
 
-/*
-body-footer {
+ 
+/* body-footer {
   background: #f77462;
   font-family: Lato, sans-serif;
   overflow-x: hidden;
-} */
+}
 
 @font-face {
   font-family: 'Genericons';
@@ -1464,7 +1497,7 @@ body-footer {
   font-weight: normal;
   font-style: normal;
   vertical-align: top;
-}
+} */
 
 /* IE7 */
 [class*="genericon"] {
